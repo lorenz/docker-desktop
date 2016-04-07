@@ -1,0 +1,10 @@
+x2go:
+  build: .
+  volumes:
+    - ./sec:/sec
+    - ./home:/home
+  environment:
+    USER: me
+    PASSWORD: password1234
+  ports:
+    - "4061:22"
